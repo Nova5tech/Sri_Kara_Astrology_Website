@@ -48,7 +48,11 @@ export default function Home() {
 
       <section className="section">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
-          <Placeholder label="Sample profile photo" className="h-80 rounded-2xl sm:h-[28rem]" />
+        <img
+  src="/images/astrologer-couple.jpg"
+  alt="G.M.S. Pattabi Sastri and his wife"
+  className="h-80 w-full rounded-2xl object-cover shadow-lg sm:h-[28rem]"
+/>
           <div>
             <p className="mb-2 text-sm font-semibold text-gold-dark">{t(astrologer.mantra)}</p>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-gold">{t('Meet the Astrologer')}</p>
