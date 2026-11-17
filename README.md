@@ -1,4 +1,4 @@
-# Sri Kara Maha Shakti Pettam Astro – Website Prototype
+# Sri Kara Maha Shakti Pettam Astro – Website
 
 React + Vite + Tailwind CSS 3 + React Router + Lucide + Framer Motion. No backend; all content is demo data in `src/data/`.
 
