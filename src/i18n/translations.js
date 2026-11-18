@@ -37,14 +37,48 @@ export const translations = {
         'The five limbs of the Panchangam, namely tithi, vara (weekday), nakshatra, yoga and karana, are examined together. Periods such as Rahu Kalam are generally avoided for new beginnings.': 'పంచాంగంలోని ఐదు అంగాలైన తిథి, వారం, నక్షత్రం, యోగం మరియు కరణాన్ని కలిపి పరిశీలిస్తారు. కొత్త పనులకు రాహుకాలం వంటి సమయాలను సాధారణంగా విడిచిపెడతారు.',
         'A good muhurtham is also checked against the horoscopes of the people involved, since a time that suits one person may not suit another. For major events, it is wise to consult an astrologer well in advance.': 'మంచి ముహూర్తాన్ని సంబంధిత వ్యక్తుల జాతకాలతో కూడా సరిచూస్తారు, ఎందుకంటే ఒకరికి అనువైన సమయం మరొకరికి అనువుగా ఉండకపోవచ్చు. ముఖ్యమైన కార్యక్రమాల కోసం ముందుగానే జ్యోతిష్యుల సలహా తీసుకోవడం మంచిది.',
 
-    // Panchangam publications
-    'Full Year': 'పూర్తి సంవత్సరం',
-    'Panchangam 2027': 'పంచాంగం 2027',
-    'Hindu calendar for Hyderabad by Drik Panchang. Reference copy for review only.': 'హైదరాబాద్ కోసం దృక్ పంచాంగ్ రూపొందించిన హిందూ క్యాలెండర్. సమీక్ష కోసం మాత్రమే సూచన కాపీ.',
-    'Reference copy': 'సూచన కాపీ',
+    
+
+
+    // Panchangam publications - 2026-27
+    '2026-27': '2026-27',
+    'Daily Panchangam': 'దినసరి పంచాంగం',
+    'Monthly Panchangams': 'నెలవారీ పంచాంగాలు',
+    'Festivals': 'పండుగలు',
+    'Rashi Phalalu': 'రాశి ఫలాలు',
+    'Muhurtams': 'ముహూర్తాలు',
+
+    'Festivals 2026-27': 'పండుగలు 2026-27',
+    'Muhurtams 2026-27': 'ముహూర్తాలు 2026-27',
+    'Rashi Phalalu 2026-27': 'రాశి ఫలాలు 2026-27',
+
+    'Download': 'డౌన్‌లోడ్',
+    'PDF Document': 'PDF పత్రం',
+    'Daily Hindu Panchangam and auspicious timings.': 'దినసరి హిందూ పంచాంగం మరియు శుభ సమయాలు.',
+    'Monthly Panchangam': 'నెలవారీ పంచాంగం',
+    'Month-wise Panchangam publications for 2026-27.': '2026-27 నెలవారీ పంచాంగ ప్రచురణలు.',
+
+    'Hindu festivals and important religious occasions.': 'హిందూ పండుగలు మరియు ముఖ్యమైన ధార్మిక సందర్భాలు.',
+    'Yearly zodiac predictions and horoscope details.': 'వార్షిక రాశి ఫలితాలు మరియు జాతక వివరాలు.',
+    'Auspicious dates and timings for important occasions.': 'ముఖ్యమైన సందర్భాల కోసం శుభ తేదీలు మరియు సమయాలు.',
+
+    // Panchangam section descriptions
+    'Daily Panchangam PDF': 'దినసరి పంచాంగం PDF',
+    'Monthly Panchangam PDFs': 'నెలవారీ పంచాంగం PDFలు',
+    'Festival calendar and details.': 'పండుగల క్యాలెండర్ మరియు వివరాలు.',
+    'Rashi predictions and yearly horoscope.': 'రాశి ఫలాలు మరియు వార్షిక జాతక వివరాలు.',
+    'Auspicious dates and timings.': 'శుభ తేదీలు మరియు సమయాలు.',
+
+    // Panchangam actions
+    'View PDF': 'PDF చూడండి',
     'Download PDF': 'PDF డౌన్‌లోడ్',
-    'Panchangam publications for download.': 'డౌన్‌లోడ్ కోసం పంచాంగ ప్రచురణలు.',
-    'entries': 'ఎంట్రీలు',
+    'Open PDF': 'PDF తెరవండి',
+    'View Panchangam': 'పంచాంగం వీక్షించండి',
+    'Open in new tab': 'కొత్త ట్యాబ్‌లో తెరవండి',
+    'No PDF available.': 'PDF అందుబాటులో లేదు.',
+    'Select a month': 'నెలను ఎంచుకోండి',
+    'Back to Panchangam': 'పంచాంగానికి తిరిగి వెళ్లండి',
+
 
     // Panchangam viewer
     'View Panchangam': 'పంచాంగం వీక్షించండి',
@@ -115,6 +149,43 @@ export const translations = {
         'Mantra japa guidance': 'మంత్ర జప మార్గదర్శనం',
         'Procedure and timing of ceremonies': 'శుభకార్యాల విధానం మరియు సమయం',
 
+        // Nitya Panchangam page - banner and section heading
+        'Explore daily Panchangam, monthly calendars, festivals and auspicious timings.': 'దినసరి పంచాంగం, నెలవారీ క్యాలెండర్లు, పండుగలు మరియు శుభ సమయాలను చూడండి.',
+        '2026 - 2027': '2026 - 2027',
+        '2026 - 27': '2026 - 27',
+        'Panchangam Publications': 'పంచాంగ ప్రచురణలు',
+        'Access the latest Panchangam publications. View or download daily calendars, monthly Panchangam, festivals, horoscope predictions and auspicious timings.': 'తాజా పంచాంగ ప్రచురణలను పొందండి. దినసరి క్యాలెండర్లు, నెలవారీ పంచాంగం, పండుగలు, రాశి ఫలాలు మరియు శుభ సమయాలను చూడండి లేదా డౌన్‌లోడ్ చేసుకోండి.',
+
+        // Panchangam 2026-27
+        'Bharatabhoomi Gantala Panchangamu 2026-27': 'భరతభూమి గంటల పంచాంగము 2026-27',
+        'Full Panchangam': 'పూర్తి పంచాంగం',
+        'Daily Panchangam': 'నిత్య పంచాంగం',
+        'Daily Panchangam 2026-27': 'నిత్య పంచాంగం 2026-27',
+        'Festivals': 'పండుగలు',
+        'Auspicious Muhurtams': 'శుభ ముహూర్తాలు',
+        'Rashi Phalalu': 'రాశి ఫలాలు',
+        'The complete Panchangam booklet for Sri Parabhava Nama Samvatsaram 2026-27.': 'శ్రీ పరాభవ నామ సంవత్సరం 2026-27 సంపూర్ణ పంచాంగ గ్రంథం.',
+        'Day-by-day Panchangam for the whole year.': 'సంవత్సరం మొత్తానికి రోజువారీ పంచాంగం.',
+        'Day-by-day Panchangam for the month.': 'ఈ నెలకు రోజువారీ పంచాంగం.',
+        'Festivals and important days of the year.': 'సంవత్సరంలోని పండుగలు మరియు ముఖ్యమైన రోజులు.',
+        'Auspicious dates and times, month by month.': 'నెలల వారీగా శుభ తేదీలు మరియు సమయాలు.',
+        'Rashi-wise predictions for the year.': 'ఈ సంవత్సరానికి రాశుల వారీ ఫలితాలు.',
+        'Chaitra': 'చైత్రం',
+        'Vaishakha': 'వైశాఖం',
+        'Adhika Jyeshtha': 'అధిక జ్యేష్ఠం',
+        'Nija Jyeshtha': 'నిజ జ్యేష్ఠం',
+        'Ashadha': 'ఆషాఢం',
+        'Shravana': 'శ్రావణం',
+        'Bhadrapada': 'భాద్రపదం',
+        'Ashwayuja': 'ఆశ్వయుజం',
+        'Kartika': 'కార్తీకం',
+        'Margashira': 'మార్గశిరం',
+        'Pushya': 'పుష్యం',
+        'Magha': 'మాఘం',
+        'Phalguna': 'ఫాల్గుణం',
+        'View Panchangam': 'పంచాంగం వీక్షించండి',
+        'Open in new tab': 'కొత్త ట్యాబ్‌లో తెరవండి',
+
     // Navigation
     'Home': 'హోమ్',
     'About': 'మా గురించి',
@@ -174,35 +245,21 @@ export const translations = {
     'Make an Enquiry': 'విచారణ చేయండి',
     'Share your details and preferred date. (Demonstration form - no real enquiry is sent.)': 'మీ వివరాలు మరియు ఇష్టమైన తేదీని తెలియజేయండి. (ప్రదర్శన ఫారం - నిజమైన విచారణ పంపబడదు.)',
 
-    // Home
-    'Discover the Wisdom of Astrology': 'జ్యోతిష్య శాస్త్ర జ్ఞానాన్ని తెలుసుకోండి',
-    'Thoughtful astrological guidance and spiritual insight, presented with tradition, clarity and care.': 'సంప్రదాయం, స్పష్టత మరియు శ్రద్ధతో అందించే జ్యోతిష్య మార్గదర్శనం మరియు ఆధ్యాత్మిక అంతర్దృష్టి.',
-    'Explore Our Services': 'మా సేవలను చూడండి',
-    'A Tradition of Guidance': 'మార్గదర్శనం యొక్క సంప్రదాయం',
-    'Sample introduction text. This section will present the institution and astrologer once the client provides original details. No qualifications or achievements are claimed in this prototype.': 'నమూనా పరిచయ పాఠ్యం. క్లయింట్ అసలు వివరాలు అందించిన తర్వాత ఈ విభాగం సంస్థను మరియు జ్యోతిష్యుడిని పరిచయం చేస్తుంది. ఈ ప్రోటోటైప్‌లో ఎలాంటి అర్హతలు లేదా విజయాలు పేర్కొనబడలేదు.',
-    'Learn More About Us': 'మా గురించి మరింత తెలుసుకోండి',
-    'Featured Astrology Services': 'ప్రత్యేక జ్యోతిష్య సేవలు',
-    'Demonstration service categories.': 'ప్రదర్శన కోసం సేవా విభాగాలు.',
-    'View All Services': 'అన్ని సేవలను చూడండి',
-    'Latest Panchangam': 'తాజా పంచాంగం',
-    'Demonstration entries only - not real Panchangam data.': 'ప్రదర్శన ఎంట్రీలు మాత్రమే - నిజమైన పంచాంగ వివరాలు కాదు.',
-    'Open Panchangam': 'పంచాంగం చూడండి',
-    'Latest Articles': 'తాజా వ్యాసాలు',
-    'Latest Videos': 'తాజా వీడియోలు',
-    'Moments & Traditions': 'క్షణాలు & సంప్రదాయాలు',
-    'Demo images.': 'నమూనా చిత్రాలు.',
-    'View Gallery': 'గ్యాలరీ చూడండి',
-    'Testimonials': 'అభిప్రాయాలు',
-    'Words from Clients': 'క్లయింట్ల మాటలు',
-    'Demo content - not genuine client feedback.': 'నమూనా విషయం - నిజమైన క్లయింట్ అభిప్రాయం కాదు.',
-    'Demo testimonial': 'నమూనా అభిప్రాయం',
-    'Demo Client A': 'నమూనా క్లయింట్ A',
-    'Demo Client B': 'నమూనా క్లయింట్ B',
-    'Demo Client C': 'నమూనా క్లయింట్ C',
-    'Demo testimonial: a calm, clear and respectful consultation experience.': 'నమూనా అభిప్రాయం: ప్రశాంతమైన, స్పష్టమైన మరియు గౌరవప్రదమైన సంప్రదింపు అనుభవం.',
-    'Demo testimonial: the guidance was explained patiently and in simple language.': 'నమూనా అభిప్రాయం: మార్గదర్శనాన్ని ఓపికగా, సులభమైన భాషలో వివరించారు.',
-    'Demo testimonial: an easy booking process and a thoughtful discussion.': 'నమూనా అభిప్రాయం: సులభమైన బుకింగ్ ప్రక్రియ మరియు ఆలోచనాత్మక చర్చ.',
+        // Home
+        'Discover the Wisdom of Astrology': 'జ్యోతిష్య శాస్త్ర జ్ఞానాన్ని తెలుసుకోండి',
+        'Thoughtful astrological guidance and spiritual insight, presented with tradition, clarity and care.': 'సంప్రదాయం, స్పష్టత మరియు శ్రద్ధతో అందించే జ్యోతిష్య మార్గదర్శనం మరియు ఆధ్యాత్మిక అంతర్దృష్టి.',
+        'Explore Our Services': 'మా సేవలను చూడండి',
+        'Learn More About Us': 'మా గురించి మరింత తెలుసుకోండి',
+        'Featured Astrology Services': 'ప్రత్యేక జ్యోతిష్య సేవలు',
+        'View All Services': 'అన్ని సేవలను చూడండి',
+        'Latest Panchangam': 'తాజా పంచాంగం',
+        'Open Panchangam': 'పంచాంగం చూడండి',
+        'Latest Articles': 'తాజా వ్యాసాలు',
+        'Moments & Traditions': 'క్షణాలు & సంప్రదాయాలు',
+        'Photos from our spiritual and cultural events.': 'మా ఆధ్యాత్మిక మరియు సాంస్కృతిక కార్యక్రమాల ఫోటోలు.',
+        'View Gallery': 'గ్యాలరీ చూడండి',
 
+    
     // About
     'Who We Are': 'మేము ఎవరు',
     "Sample introduction and mission statement. This placeholder text describes an astrology and spiritual guidance practice and will be replaced with the client's own words.": 'నమూనా పరిచయం మరియు లక్ష్య ప్రకటన. ఈ నమూనా పాఠ్యం ఒక జ్యోతిష మరియు ఆధ్యాత్మిక మార్గదర్శన సంస్థను వివరిస్తుంది మరియు క్లయింట్ స్వంత మాటలతో భర్తీ చేయబడుతుంది.',

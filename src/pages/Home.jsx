@@ -1,27 +1,20 @@
-import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Quote, Download, Image as ImageIcon } from 'lucide-react'
+import { Download, Image as ImageIcon } from 'lucide-react'
 import Seo from '../components/Seo.jsx'
 import Mandala from '../components/Mandala.jsx'
-import Placeholder from '../components/Placeholder.jsx'
 import SectionTitle from '../components/SectionTitle.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
 import BlogCard from '../components/BlogCard.jsx'
-import VideoCard from '../components/VideoCard.jsx'
-import VideoModal from '../components/VideoModal.jsx'
 import CtaBand from '../components/CtaBand.jsx'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import { services } from '../data/services.js'
 import { blogs } from '../data/blogs.js'
-import { videos } from '../data/videos.js'
 import { panchangam } from '../data/panchangam.js'
 import { gallery } from '../data/gallery.js'
-import { testimonials } from '../data/site.js'
 import { astrologer } from '../data/astrologer.js'
 
 export default function Home() {
-  const [video, setVideo] = useState(null)
   const navigate = useNavigate()
   const { t } = useLang()
   const pTitle = (p) => (p.title ? t(p.title) : `${t('Nitya Panchangam')} - ${t(p.month)} ${p.year}`)
@@ -48,11 +41,11 @@ export default function Home() {
 
       <section className="section">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
-        <img
-  src="/images/astrologer-couple.jpg"
-  alt="G.M.S. Pattabi Sastri and his wife"
-  className="h-80 w-full rounded-2xl object-cover shadow-lg sm:h-[28rem]"
-/>
+          <img
+            src="/images/astrologer-couple.jpg"
+            alt="G.M.S. Pattabi Sastri and his wife"
+            className="h-80 w-full rounded-2xl object-cover shadow-lg sm:h-[28rem]"
+          />
           <div>
             <p className="mb-2 text-sm font-semibold text-gold-dark">{t(astrologer.mantra)}</p>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-gold">{t('Meet the Astrologer')}</p>
@@ -71,7 +64,7 @@ export default function Home() {
 
       <section className="section bg-white">
         <div className="container-x">
-        <SectionTitle eyebrow={t('Our Services')} title={t('Featured Astrology Services')} subtitle={t('Astrology, Vastu and spiritual guidance services.')} />
+          <SectionTitle eyebrow={t('Our Services')} title={t('Featured Astrology Services')} subtitle={t('Astrology, Vastu and spiritual guidance services.')} />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {services.slice(0, 4).map((s) => <ServiceCard key={s.id} service={s} onOpen={() => navigate('/services')} />)}
           </div>
@@ -103,41 +96,25 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container-x">
-          <SectionTitle eyebrow={t('Videos')} title={t('Latest Videos')} subtitle={t('Demonstration videos - not actual client content.')} />
-          <div className="grid gap-6 md:grid-cols-3">{videos.slice(0, 3).map((v, i) => <VideoCard key={v.id} video={v} index={i} onPlay={setVideo} />)}</div>
-        </div>
-      </section>
-
       <section className="section bg-navy">
         <div className="container-x">
-          <SectionTitle eyebrow={t('Gallery')} title={t('Moments & Traditions')} light subtitle={t('Demo images.')} />
+          <SectionTitle eyebrow={t('Gallery')} title={t('Moments & Traditions')} light subtitle={t('Photos from our spiritual and cultural events.')} />
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {gallery.slice(0, 4).map((g) => <Placeholder key={g.id} tone={g.tone} label={`${t('Demo photo')} ${g.id}`} className="aspect-square rounded-xl" />)}
+            {gallery.slice(0, 4).map((g) => (
+              <img
+                key={g.id}
+                src={g.src}
+                alt={g.title || 'Gallery photo'}
+                loading="lazy"
+                className="aspect-square w-full rounded-xl object-cover"
+              />
+            ))}
           </div>
           <div className="mt-10 text-center"><Link to="/gallery" className="btn-outline"><ImageIcon size={16} /> {t('View Gallery')}</Link></div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container-x">
-          <SectionTitle eyebrow={t('Testimonials')} title={t('Words from Clients')} subtitle={t('Demo content - not genuine client feedback.')} />
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map((x) => (
-              <div key={x.name} className="card p-7">
-                <Quote className="text-gold" />
-                <p className="mt-3 text-sm text-charcoal/80">{t(x.text)}</p>
-                <p className="mt-4 font-serif text-lg font-bold">{t(x.name)}</p>
-                <span className="demo-tag">{t('Demo testimonial')}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <CtaBand />
-      <VideoModal video={video} onClose={() => setVideo(null)} />
     </>
   )
 }
