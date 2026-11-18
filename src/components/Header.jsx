@@ -12,16 +12,16 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-gold/30 bg-navy/95 backdrop-blur">
-        <div className="container-x flex h-20 items-center justify-between gap-4">
-          <Link to="/" className="flex shrink-0 items-center gap-3" aria-label={site.name}>
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold text-gold"><Sparkles size={20} /></span>
+        <div className="container-x flex h-20 items-center justify-between gap-2 sm:gap-4">
+          <Link to="/" className="flex min-w-0 items-center gap-3" aria-label={site.name}>
+            <span className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold text-gold sm:flex"><Sparkles size={20} /></span>
             <span className="whitespace-nowrap leading-tight">
-              <span className="block font-serif text-lg font-bold text-ivory">{t('Sri Kara Maha Shakti')}</span>
-              <span className="block text-[10px] font-bold uppercase tracking-[0.3em] text-gold">{t('Pettam Astro')}</span>
+              <span className="block font-serif text-[15px] font-bold text-ivory sm:text-lg">{t('Sri Kara Maha Shakti')}</span>
+              <span className="block text-[9px] font-bold uppercase tracking-[0.2em] text-gold sm:text-[10px] sm:tracking-[0.3em]">{t('Pettam Astro')}</span>
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-4 whitespace-nowrap xl:flex" aria-label="Main">
+          <nav className="hidden items-center gap-3 whitespace-nowrap lg:flex xl:gap-4" aria-label="Main">
             {navLinks.map((l) =>
               l.external ? (
                 <a key={l.label} href={l.href} target="_blank" rel="noreferrer"
@@ -36,12 +36,12 @@ export default function Header() {
               )
             )}
             <LanguageToggle />
-            <Link to="/contact" className="btn-gold !min-h-[42px] !px-5 whitespace-nowrap">{t('Book Appointment')}</Link>
+            <Link to="/contact" className="btn-gold hidden !min-h-[42px] !px-5 whitespace-nowrap xl:inline-flex">{t('Book Appointment')}</Link>
           </nav>
 
-          <div className="flex items-center gap-2 xl:hidden">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-2 lg:hidden">
             <LanguageToggle />
-            <button className="rounded-lg p-3 text-ivory" onClick={() => setOpen(true)} aria-label="Open menu"><Menu /></button>
+            <button className="shrink-0 rounded-lg p-2 text-ivory sm:p-3" onClick={() => setOpen(true)} aria-label="Open menu"><Menu /></button>
           </div>
         </div>
       </header>
